@@ -2,19 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-const Alert = ({ children, color, toggle, isOpen, className }) => {
+const Alert = ({ children, color, closable, className }) => {
   const classes = classnames(className, {
     alert: true,
     [`alert-${color}`]: true,
-    ['alert-dismissible']: toggle,
-    fade: toggle,
-    show: isOpen,
+    ['alert-dismissible']: closable,
+    fade: closable,
+    show: closable,
   })
 
   return (
     <div className={classes} role='alert'>
       {children}
-      {toggle && (
+      {closable && (
         <button
           type='button'
           className='btn-close'
@@ -38,15 +38,13 @@ Alert.propTypes = {
     'dark',
   ]),
   children: PropTypes.node,
-  toggle: PropTypes.bool,
-  isOpen: PropTypes.bool,
+  closable: PropTypes.bool,
   className: PropTypes.string,
 }
 
 Alert.defaultProps = {
   color: 'primary',
-  toggle: true,
-  isOpen: true,
+  closable: false,
   className: '',
 }
 

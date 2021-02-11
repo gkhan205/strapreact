@@ -1,9 +1,18 @@
 import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import { Alert } from 'strapreact'
+import Home from './Home'
+import ComponentRoutes from './ComponentRoutes'
 
 const App = () => {
-  return <Alert color='warning'>Test Alert</Alert>
+  return (
+    <div className='container'>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <ComponentRoutes />
+      </Switch>
+    </div>
+  )
 }
 
 export default App
