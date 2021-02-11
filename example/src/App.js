@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'strapreact'
-import 'strapreact/dist/index.css'
+import { Alert } from 'strapreact'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Alert color='warning'>Test Alert</Alert>
 }
 
 export default App
