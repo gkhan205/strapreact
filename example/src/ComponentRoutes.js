@@ -1,12 +1,12 @@
 import React from 'react'
-import { Route, Link, NavLink } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
 
 import { componentRoutes } from './routes'
 
 const ComponentRoutes = () => {
   return (
     <div className='row'>
-      <div className='col-md-9'>
+      <div className='col-md-9 mt-5'>
         {componentRoutes.map((route, index) => (
           <Route
             exact
