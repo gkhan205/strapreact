@@ -1,0 +1,77 @@
+.button {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-big {
+  padding: 15px 18px;
+  font-size: var(--button---large);
+}
+
+.btn-medium {
+  padding: 15px 18px;
+  font-size: var(--button---medium);
+}
+
+.btn-small {
+  padding: 15px 18px;
+  font-size: var(--button---small);
+}
+
+.btn-primary {
+  background-color: var(--primary--500);
+  color: var(--white--100);
+}
+
+.btn-success {
+  background-color: var(--success--500);
+  color: var(--white--100);
+}
+
+.btn-info {
+  background-color: var(--info--500);
+  color: var(--white--100);
+}
+
+.btn-warning {
+  background-color: var(--warning--500);
+  color: var(--white--100);
+}
+
+.btn-danger {
+  background-color: var(--danger--500);
+  color: var(--white--100);
+}
+
+.btn-pink {
+  background-color: var(--pink--500);
+  color: var(--white--100);
+}
+
+.btn-purple {
+  background-color: var(--purple--500);
+  color: var(--white--100);
+}
+
+.btn-cyan {
+  background-color: var(--cyan--500);
+  color: var(--white--100);
+}
+
+.btn-aquamarine {
+  background-color: var(--aquamarine--500);
+  color: var(--white--100);
+}
+
+.btn-grey {
+  background-color: var(--grey--500);
+  color: var(--white--100);
+}
+
+.btn-black {
+  background-color: var(--black--500);
+  color: var(--white--100);
+}
